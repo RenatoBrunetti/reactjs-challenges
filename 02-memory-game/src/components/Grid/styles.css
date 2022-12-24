@@ -1,0 +1,12 @@
+.grid__info {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.grid__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .2rem;
+  border: 1px solid white;
+  padding: .2rem
+}

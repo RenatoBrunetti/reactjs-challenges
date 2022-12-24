@@ -1,0 +1,35 @@
+/* Excluir acima */
+.card__content {
+  position: relative;
+  aspect-ratio: 1/1;
+  transform-style: preserve-3d;
+  transition: transform 600ms ease-in-out;
+  border: 1px solid white;
+}
+
+.card__content--flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  cursor: pointer;
+  font-size: 5rem;
+}
+
+.card__face--front {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+.card__face--back {
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
+  transform: rotateY(180deg);
+}
